@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import {View} from 'react-native'
 import Home from './pages/Home/Home'
 import Categoria from './pages/Categoria/Categoria'
 
