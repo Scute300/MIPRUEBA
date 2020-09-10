@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View,StyleSheet,Text,TouchableOpacity, Button } from 'react-native'
+import { View,StyleSheet,Text,TouchableOpacity, Button,TextInput } from 'react-native'
 import { FontAwesome } from '@expo/vector-icons'; 
 
 interface MyProps {
@@ -74,7 +74,8 @@ export default class Reservadetails extends React.Component<MyProps, MyState>{
                         <Text style={{fontWeight: 'bold'}}>
                             Observación
                         </Text>
-                         <View style={styles.titlebox}>
+                        <TextInput placeholder="Escriba aquí"/>
+                         <View style={styles.footerbox}>
                             <Button title="Crear reserva" onPress={()=>{console.log('ss')}}>
                             </Button>
                          </View>
@@ -99,7 +100,6 @@ const styles = StyleSheet.create({
     },
     box: {
         width: '80%',
-        height: 400,
         backgroundColor: 'white',
         borderRadius: 20,
         marginTop: 70,
@@ -136,5 +136,9 @@ const styles = StyleSheet.create({
     textsubsection:{
         fontSize: 15,
         fontWeight: 'bold'
+    },
+    footerbox: {
+        justifyContent: 'center',
+        paddingVertical: 15
     }
 })
